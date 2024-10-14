@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.head-section {
+  max-width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.head-title {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main-title {
+  font-family: "Libre Baskerville", serif;
+}
+#intro-title {
+  font-family: "Libre Baskerville", serif;
+  color: #434141;
+  font-size: 1.25rem;
+}
+#title-img {
+  height: 4rem;
+  width: 4rem;
+}
+#task-button{
+    padding: 1rem 2rem;
+    border: none;
+    background-color: rgba(33, 22, 185, 0.639);
+    font-weight: bold;
+    border-radius: 0.5rem;
+    font-family: "Libre Baskerville", serif;
+    color: aliceblue;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.875rem;
+}
+.main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+#task-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+#task-button:hover {
+  background-color: #0056b3;
+}
+.task-input {
+  width: 30rem;
+  height: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  margin-bottom: 20px;
+  transition: border-color 0.3s;
+}
+.task-input:focus {
+  outline: none;
+  border-color: #007BFF;
+}
+.info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.info-section label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.task-date, .task-goal, .task-detail {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+.task-date:focus, .task-goal:focus, .task-detail:focus {
+  outline: none;
+  border-color: #007BFF;
+}
+.task-detail {
+  height: 80px;
+}
+@media (max-width: 600px) {
+  .task-input, .task-date, .task-goal, .task-detail {
+    width: 90%;
+  }
+}
